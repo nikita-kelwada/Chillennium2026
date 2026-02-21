@@ -1,18 +1,7 @@
 extends CharacterBody2D
 
-const SPEED = 200.0
+@export var speed: float = 400.0
 
-func _physics_process(delta):
-	var direction = Vector2.ZERO
-	
-	if Input.is_action_pressed("ui_right"):
-		direction.x += 1
-	if Input.is_action_pressed("ui_left"):
-		direction.x -= 1
-	if Input.is_action_pressed("ui_down"):
-		direction.y += 1
-	if Input.is_action_pressed("ui_up"):
-		direction.y -= 1
-	
-	velocity = direction.normalized() * SPEED
-	move_and_slide()
+func _physics_process(_delta: float) -> void:
+	if Input.is_action_pressed("left") or Input.is_action_pressed("right") or Input.is_action_pressed("up") or Input.is_action_pressed("down"):
+		print("INPUT DETECTED")
