@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cf8i8najf1f50"]
 
 [ext_resource type="Script" uid="uid://dp77x4jlo7hrn" path="res://scripts/levels/level_01.gd" id="1_i2pqh"]
-[ext_resource type="PackedScene" uid="uid://qpdh753u4ytg" path="res://scenes/Enemy.tscn" id="2_qtqmo"]
+[ext_resource type="PackedScene" path="res://scenes/enemy.tscn" id="2_qtqmo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a01y6"]
 size = Vector2(380, 95)

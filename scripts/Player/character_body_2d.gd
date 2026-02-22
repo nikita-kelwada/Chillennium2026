@@ -26,3 +26,11 @@ func _physics_process(_delta: float) -> void:
 	
 	velocity = target_velocity
 	move_and_slide()
+
+	# --- SCREEN BOUNDARY LOGIC ---
+	# Gets the size of your game window (e.g., 1152x648)
+	var screen_size = get_viewport_rect().size
+	
+	# Clamp ensures the position never goes below 0 or above the screen width/height
+	global_position.x = clamp(global_position.x, 0, screen_size.x)
+	global_position.y = clamp(global_position.y, 0, screen_size.y)
