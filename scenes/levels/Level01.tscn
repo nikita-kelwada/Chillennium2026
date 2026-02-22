@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cf8i8najf1f50"]
 
 [ext_resource type="Script" uid="uid://dp77x4jlo7hrn" path="res://scripts/levels/level_01.gd" id="1_i2pqh"]
-[ext_resource type="PackedScene" path="res://scenes/enemy.tscn" id="2_qtqmo"]
+[ext_resource type="PackedScene" uid="uid://ch2bc1fn4aryw" path="res://scenes/Enemy.tscn" id="2_gsbbr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a01y6"]
 size = Vector2(380, 95)
@@ -32,5 +32,5 @@ color = Color(1, 0, 1, 1)
 [node name="PlayerSpawn" type="Marker2D" parent="." unique_id=901461776]
 position = Vector2(355, 92)
 
-[node name="Enemy" parent="." unique_id=1545952919 instance=ExtResource("2_qtqmo")]
-position = Vector2(392, 379)
+[node name="Enemy" parent="." unique_id=1545952919 instance=ExtResource("2_gsbbr")]
+position = Vector2(582, 503)
