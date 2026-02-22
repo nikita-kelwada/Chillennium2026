@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://c2eq331yxhc0h"]
+
+[ext_resource type="Script" path="res://scripts/Player/character_body_2d.gd" id="1_at5dv"]
+[ext_resource type="Texture2D" uid="uid://dhdn18p5oo3uh" path="res://assets/back.png" id="2_jcd4p"]
+[ext_resource type="Texture2D" uid="uid://xofgcay3nx8l" path="res://assets/back_walking_1.png" id="3_uacia"]
+[ext_resource type="Texture2D" uid="uid://sbgmbp3h6ipc" path="res://assets/back_walking_2.png" id="4_yk7ts"]
+[ext_resource type="Texture2D" uid="uid://bidfgj5l5yjmh" path="res://assets/front.png" id="5_ajshl"]
+[ext_resource type="Texture2D" uid="uid://cet8fsvqhdu7h" path="res://assets/front_walking_1.png" id="6_ghpyy"]
+[ext_resource type="Texture2D" uid="uid://eo0ci5lc842b" path="res://assets/front_walking_2.png" id="7_44saj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7mbro"]
+size = Vector2(123, 152)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ff6ho"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("2_jcd4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_uacia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yk7ts")
+}],
+"loop": true,
+"name": &"back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("5_ajshl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ghpyy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_44saj")
+}],
+"loop": true,
+"name": &"front",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=2113391368]
+motion_mode = 1
+script = ExtResource("1_at5dv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1126023789]
+position = Vector2(0.5, -1)
+shape = SubResource("RectangleShape2D_7mbro")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1394283626]
+position = Vector2(0, -1)
+scale = Vector2(2.125, 2.203125)
+sprite_frames = SubResource("SpriteFrames_ff6ho")
+animation = &"back"
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1956921176]
