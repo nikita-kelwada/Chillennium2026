@@ -1,39 +1,36 @@
 [gd_scene format=3 uid="uid://cf8i8najf1f50"]
 
 [ext_resource type="Script" uid="uid://dp77x4jlo7hrn" path="res://scripts/levels/level_01.gd" id="1_i2pqh"]
-[ext_resource type="PackedScene" uid="uid://qpdh753u4ytg" path="res://scenes/enemy.tscn" id="2_qtqmo"]
+[ext_resource type="PackedScene" uid="uid://qpdh753u4ytg" path="res://scenes/Enemy.tscn" id="2_qtqmo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a01y6"]
-size = Vector2(591, 162)
+size = Vector2(380, 95)
 
 [node name="Level01" type="Node2D" unique_id=1583420218]
 script = ExtResource("1_i2pqh")
 
 [node name="Floor" type="ColorRect" parent="." unique_id=1549590659]
 custom_minimum_size = Vector2(1920, 1080)
-offset_left = 2.0
-offset_top = 3.0
-offset_right = 1922.0
-offset_bottom = 1083.0
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 1916.0
+offset_bottom = 1077.0
 
 [node name="Wall_1" type="StaticBody2D" parent="." unique_id=1893145649]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall_1" unique_id=66393008]
-position = Vector2(589, 275)
+position = Vector2(321, 315.5)
 shape = SubResource("RectangleShape2D_a01y6")
 
 [node name="ColorRect" type="ColorRect" parent="Wall_1" unique_id=1232369237]
-offset_left = 295.0
-offset_top = 193.0
-offset_right = 883.0
-offset_bottom = 355.0
+offset_left = 127.0
+offset_top = 258.0
+offset_right = 512.0
+offset_bottom = 371.0
 color = Color(1, 0, 1, 1)
 
 [node name="PlayerSpawn" type="Marker2D" parent="." unique_id=901461776]
-position = Vector2(131, 97)
-
-[node name="EnemySpawn" type="Marker2D" parent="." unique_id=2024827069]
-position = Vector2(940, 478)
+position = Vector2(355, 92)
 
 [node name="Enemy" parent="." unique_id=1545952919 instance=ExtResource("2_qtqmo")]
-position = Vector2(815, 348)
+position = Vector2(392, 379)
