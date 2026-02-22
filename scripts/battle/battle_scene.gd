@@ -2,6 +2,7 @@ extends Node2D
 
 var user_turn = true;
 @onready var enemy = $Enemy
+@onready var player = $Player/CharacterBody2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -18,4 +19,9 @@ func _on_attack_button_pressed():
 
 	print(enemy.current_health)
 	enemy.take_damage(10)
+	
+	#AI attack
+	player.take_damage(10)
+
 	user_turn = false
+
