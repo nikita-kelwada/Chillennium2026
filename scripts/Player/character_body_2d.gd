@@ -6,11 +6,14 @@ extends CharacterBody2D
 # This links the script to your new AnimatedSprite2D node
 @onready var _animated_sprite = $AnimatedSprite2D
 var enemy = null
+@export var max_health: int = 100
+var current_health: int
 
 func _ready():
 	# Wait a split second to make sure the Enemy has joined the group
 	await get_tree().create_timer(0.1).timeout
 	enemy = get_tree().get_first_node_in_group("Enemy")
+	current_health = max_health
 
 func _physics_process(_delta: float) -> void:
 	var dir = Input.get_vector("left", "right", "up", "down")
@@ -39,3 +42,11 @@ func _physics_process(_delta: float) -> void:
 
 	velocity = target_velocity
 	move_and_slide()
+
+func take_damage(amount: int):
+	current_health -= amount
+	current_health = clamp(current_health, 0, max_health)
+
+	if current_health <= 0:
+		#do dying
+		pass

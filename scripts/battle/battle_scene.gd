@@ -7,7 +7,7 @@ var user_turn = true;
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	_animated_sprite.play("idle_battle")
+	#_animated_sprite.play("battle")
 	pass # Replace with function body.
 
 
