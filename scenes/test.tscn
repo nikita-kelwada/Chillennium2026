@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://c2eq331yxhc0h"]
 
-[ext_resource type="Script" path="res://scripts/Player/character_body_2d.gd" id="1_at5dv"]
-[ext_resource type="Texture2D" uid="uid://dhdn18p5oo3uh" path="res://assets/back.png" id="2_jcd4p"]
-[ext_resource type="Texture2D" uid="uid://xofgcay3nx8l" path="res://assets/back_walking_1.png" id="3_uacia"]
-[ext_resource type="Texture2D" uid="uid://sbgmbp3h6ipc" path="res://assets/back_walking_2.png" id="4_yk7ts"]
-[ext_resource type="Texture2D" uid="uid://bidfgj5l5yjmh" path="res://assets/front.png" id="5_ajshl"]
-[ext_resource type="Texture2D" uid="uid://cet8fsvqhdu7h" path="res://assets/front_walking_1.png" id="6_ghpyy"]
-[ext_resource type="Texture2D" uid="uid://eo0ci5lc842b" path="res://assets/front_walking_2.png" id="7_44saj"]
+[ext_resource type="Script" uid="uid://sws8myouvcc4" path="res://scripts/Player/character_body_2d.gd" id="1_at5dv"]
+[ext_resource type="Texture2D" uid="uid://dhdn18p5oo3uh" path="res://assets/main_mc/back.png" id="2_jcd4p"]
+[ext_resource type="Texture2D" uid="uid://xofgcay3nx8l" path="res://assets/main_mc/back_walking_1.png" id="3_uacia"]
+[ext_resource type="Texture2D" uid="uid://sbgmbp3h6ipc" path="res://assets/main_mc/back_walking_2.png" id="4_yk7ts"]
+[ext_resource type="Texture2D" uid="uid://bidfgj5l5yjmh" path="res://assets/main_mc/front.png" id="5_ajshl"]
+[ext_resource type="Texture2D" uid="uid://cet8fsvqhdu7h" path="res://assets/main_mc/front_walking_1.png" id="6_ghpyy"]
+[ext_resource type="Texture2D" uid="uid://eo0ci5lc842b" path="res://assets/main_mc/front_walking_2.png" id="7_44saj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mbro"]
 size = Vector2(123, 152)

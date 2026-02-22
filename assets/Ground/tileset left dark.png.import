@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh12fjdv0dxih"
-path="res://.godot/imported/tileset bottom dark.png-da554bf31979cc44a5df6224188298bc.ctex"
+uid="uid://b5xxobnw26l0u"
+path="res://.godot/imported/tileset left dark.png-bcd91bf934489f8d81ff6fcba455adc0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tileset bottom dark.png"
-dest_files=["res://.godot/imported/tileset bottom dark.png-da554bf31979cc44a5df6224188298bc.ctex"]
+source_file="res://assets/Ground/tileset left dark.png"
+dest_files=["res://.godot/imported/tileset left dark.png-bcd91bf934489f8d81ff6fcba455adc0.ctex"]
 
 [params]
 

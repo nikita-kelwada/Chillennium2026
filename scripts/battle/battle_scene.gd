@@ -24,4 +24,3 @@ func _on_attack_button_pressed():
 	player.take_damage(10)
 
 	user_turn = false
-

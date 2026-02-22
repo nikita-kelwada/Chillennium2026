@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0v4bxg3xkhic"
-path="res://.godot/imported/Eye.svg-ba73c4b7c669363d7c192b6b7b12402b.ctex"
+uid="uid://csu28tuapicfd"
+path="res://.godot/imported/idle_main1.png-3c66f5da65d704bddb183eccbe0d2588.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Eye.svg"
-dest_files=["res://.godot/imported/Eye.svg-ba73c4b7c669363d7c192b6b7b12402b.ctex"]
+source_file="res://assets/battle_mc/idle_main1.png"
+dest_files=["res://.godot/imported/idle_main1.png-3c66f5da65d704bddb183eccbe0d2588.ctex"]
 
 [params]
 
@@ -38,6 +38,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

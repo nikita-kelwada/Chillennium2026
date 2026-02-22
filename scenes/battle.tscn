@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://c42cista2h52u"]
 
-[ext_resource type="Texture2D" uid="uid://csu28tuapicfd" path="res://assets/idle_main1.png" id="1_p1qf1"]
-[ext_resource type="Texture2D" uid="uid://srp0tjscyvrf" path="res://assets/idle_main2.png" id="2_a12nh"]
-[ext_resource type="Texture2D" uid="uid://d4hbkwc6t00a7" path="res://assets/idle_main3.png" id="3_lpir7"]
+[ext_resource type="Texture2D" uid="uid://csu28tuapicfd" path="res://assets/battle_mc/idle_main1.png" id="1_p1qf1"]
+[ext_resource type="Texture2D" uid="uid://srp0tjscyvrf" path="res://assets/battle_mc/idle_main2.png" id="2_a12nh"]
+[ext_resource type="Texture2D" uid="uid://d4hbkwc6t00a7" path="res://assets/battle_mc/idle_main3.png" id="3_lpir7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6vh42"]
 animations = [{
@@ -28,4 +28,4 @@ position = Vector2(514.99994, 784.99994)
 scale = Vector2(0.94198114, 0.9334906)
 sprite_frames = SubResource("SpriteFrames_6vh42")
 animation = &"idle_main_battle"
-frame_progress = 0.99681664
+frame_progress = 0.11347949

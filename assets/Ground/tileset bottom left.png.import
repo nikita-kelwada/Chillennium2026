@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://sbgmbp3h6ipc"
-path="res://.godot/imported/back_walking_2.png-d6ef4ade1b154baf301425d7ab9bb84e.ctex"
+uid="uid://cngw33nsnq5uf"
+path="res://.godot/imported/tileset bottom left.png-78b0f0ed6311daf5c7aed3a407169137.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/back_walking_2.png"
-dest_files=["res://.godot/imported/back_walking_2.png-d6ef4ade1b154baf301425d7ab9bb84e.ctex"]
+source_file="res://assets/Ground/tileset bottom left.png"
+dest_files=["res://.godot/imported/tileset bottom left.png-78b0f0ed6311daf5c7aed3a407169137.ctex"]
 
 [params]
 

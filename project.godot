@@ -13,7 +13,6 @@ config_version=5
 config/name="Chillennium2026"
 run/main_scene="uid://uv1depb1efxw"
 config/features=PackedStringArray("4.6", "Mobile")
-config/icon="res://assets/icon.svg"
 
 [display]
 

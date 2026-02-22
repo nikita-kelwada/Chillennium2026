@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dykeeew7hn4ob"
-path="res://.godot/imported/tileset top left.png-ba27a5e48343ffba90db662f687ceca0.ctex"
+uid="uid://srp0tjscyvrf"
+path="res://.godot/imported/idle_main2.png-2cf83128da287e1385d47386260410e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tileset top left.png"
-dest_files=["res://.godot/imported/tileset top left.png-ba27a5e48343ffba90db662f687ceca0.ctex"]
+source_file="res://assets/battle_mc/idle_main2.png"
+dest_files=["res://.godot/imported/idle_main2.png-2cf83128da287e1385d47386260410e2.ctex"]
 
 [params]
 
