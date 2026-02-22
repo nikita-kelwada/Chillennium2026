@@ -1,9 +1,46 @@
 [gd_scene format=3 uid="uid://16imlkh223hq"]
 
 [ext_resource type="Script" uid="uid://sws8myouvcc4" path="res://scripts/Player/character_body_2d.gd" id="1_h00vy"]
-[ext_resource type="Texture2D" uid="uid://bidfgj5l5yjmh" path="res://assets/mc front sprite 1.png" id="2_v6fml"]
+[ext_resource type="Texture2D" uid="uid://dhdn18p5oo3uh" path="res://assets/back.png" id="2_cw2d6"]
+[ext_resource type="Texture2D" uid="uid://bidfgj5l5yjmh" path="res://assets/front.png" id="2_v6fml"]
+[ext_resource type="Texture2D" uid="uid://xofgcay3nx8l" path="res://assets/back_walking_1.png" id="3_khinc"]
+[ext_resource type="Texture2D" uid="uid://sbgmbp3h6ipc" path="res://assets/back_walking_2.png" id="4_bruh7"]
+[ext_resource type="Texture2D" uid="uid://cet8fsvqhdu7h" path="res://assets/front_walking_1.png" id="6_6eyey"]
+[ext_resource type="Texture2D" uid="uid://eo0ci5lc842b" path="res://assets/front_walking_2.png" id="7_d3wef"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ky53y"]
+size = Vector2(123, 152)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v6fml"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("2_cw2d6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_khinc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_bruh7")
+}],
+"loop": true,
+"name": &"back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("2_v6fml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6eyey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_d3wef")
+}],
+"loop": true,
+"name": &"front",
+"speed": 5.0
+}]
 
 [node name="Node2D" type="Node2D" unique_id=609665559]
 
@@ -11,8 +48,14 @@
 motion_mode = 1
 script = ExtResource("1_h00vy")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=57208791]
-texture = ExtResource("2_v6fml")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2000743283]
+position = Vector2(0.5, -1)
 shape = SubResource("RectangleShape2D_ky53y")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1070114861]
+position = Vector2(0, -1)
+scale = Vector2(2.125, 2.203125)
+sprite_frames = SubResource("SpriteFrames_v6fml")
+animation = &"front"
+frame = 2
+frame_progress = 0.01800233

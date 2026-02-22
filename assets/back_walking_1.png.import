@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://eo0ci5lc842b"
-path="res://.godot/imported/mc front sprite 3.png-646212a2f023f4bc6697ff39b9f03df4.ctex"
+uid="uid://xofgcay3nx8l"
+path="res://.godot/imported/back_walking_1.png-4a7ae94ef0b43d049cbdd6d3e6384047.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mc front sprite 3.png"
-dest_files=["res://.godot/imported/mc front sprite 3.png-646212a2f023f4bc6697ff39b9f03df4.ctex"]
+source_file="res://assets/back_walking_1.png"
+dest_files=["res://.godot/imported/back_walking_1.png-4a7ae94ef0b43d049cbdd6d3e6384047.ctex"]
 
 [params]
 
