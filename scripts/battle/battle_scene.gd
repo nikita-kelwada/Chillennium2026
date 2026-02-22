@@ -20,9 +20,9 @@ func _on_attack_button_pressed():
 		#return 
 
 	print(enemy.current_health)
-	enemy.take_damage(10)
+	enemy.take_damage(player.strength, randf() > 0.9)
 	
 	#AI attack
-	player.take_damage(10)
+	player.take_damage(enemy.strength, randf() > 0.9)
 
 	user_turn = false

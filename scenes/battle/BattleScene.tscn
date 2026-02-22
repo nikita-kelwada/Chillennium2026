@@ -16,11 +16,11 @@ color = Color(0.21273804, 0.46230906, 0.34196073, 1)
 
 [node name="Enemy" parent="." unique_id=1545952919 instance=ExtResource("2_t3o3d")]
 position = Vector2(1252.9999, 304)
-scale = Vector2(3.105, 3.105)
+scale = Vector2(3, 3)
 
 [node name="Player" parent="." unique_id=609665559 instance=ExtResource("3_rjp4h")]
-position = Vector2(487, 874.99994)
-scale = Vector2(4.365, 4.365)
+position = Vector2(652, 858.00006)
+scale = Vector2(0.3, 0.3)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1356423377]
 position = Vector2(955, 653)
