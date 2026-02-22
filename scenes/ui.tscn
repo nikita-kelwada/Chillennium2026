@@ -13,8 +13,6 @@ grow_vertical = 2
 [node name="PauseMenu" type="CanvasLayer" parent="." unique_id=2068149300]
 process_mode = 3
 visible = false
-scale = Vector2(2.05, 2.05)
-transform = Transform2D(2.05, 0, 0, 2.05, 0, 0)
 script = ExtResource("1_fyqef")
 
 [node name="Label" type="Label" parent="PauseMenu" unique_id=1929946300]
