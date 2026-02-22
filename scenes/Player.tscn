@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://16imlkh223hq"]
 
 [ext_resource type="Script" uid="uid://sws8myouvcc4" path="res://scripts/Player/character_body_2d.gd" id="1_h00vy"]
-[ext_resource type="Texture2D" uid="uid://c5ocmswj1mff" path="res://assets/icon.svg" id="2_ky53y"]
+[ext_resource type="Texture2D" uid="uid://bidfgj5l5yjmh" path="res://assets/mc front sprite 1.png" id="2_v6fml"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ky53y"]
 
@@ -12,7 +12,7 @@ motion_mode = 1
 script = ExtResource("1_h00vy")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=57208791]
-texture = ExtResource("2_ky53y")
+texture = ExtResource("2_v6fml")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2000743283]
 shape = SubResource("RectangleShape2D_ky53y")
