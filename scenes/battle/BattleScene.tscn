@@ -130,12 +130,21 @@ y_sort_enabled = true
 script = ExtResource("1_vd1me")
 
 [node name="Enemy" parent="." unique_id=1545952919 instance=ExtResource("2_t3o3d")]
+<<<<<<< HEAD
 position = Vector2(953, 388)
 scale = Vector2(3.105, 3.105)
 
 [node name="CollisionShape2D" parent="Enemy" index="0" unique_id=1083466583]
 position = Vector2(-8.615143, -1.7713394)
 scale = Vector2(0.099999994, 0.099999994)
+=======
+position = Vector2(1252.9999, 304)
+scale = Vector2(3, 3)
+
+[node name="Player" parent="." unique_id=609665559 instance=ExtResource("3_rjp4h")]
+position = Vector2(652, 858.00006)
+scale = Vector2(0.3, 0.3)
+>>>>>>> 2902da163e5d6b72c430e58144a111dc3566b63d
 
 [node name="AnimatedSprite2D" parent="Enemy" index="1" unique_id=1335344913]
 position = Vector2(-1.610301, -3.2206078)
