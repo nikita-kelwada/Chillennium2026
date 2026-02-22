@@ -7,50 +7,60 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a01y6"]
 size = Vector2(380, 95)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rd8yo"]
-texture = ExtResource("3_qtqmo")
-texture_region_size = Vector2i(128, 128)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gsbbr"]
+size = Vector2(1280, 20)
 
-[sub_resource type="TileSet" id="TileSet_h7kxv"]
-tile_size = Vector2i(128, 128)
-sources/0 = SubResource("TileSetAtlasSource_rd8yo")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qtqmo"]
+size = Vector2(20, 1280)
 
 [node name="Level01" type="Node2D" unique_id=1583420218]
 script = ExtResource("1_i2pqh")
 
 [node name="Floor" type="ColorRect" parent="." unique_id=1549590659]
-custom_minimum_size = Vector2(1920, 1080)
-offset_left = -4.0
-offset_top = -3.0
-offset_right = 1916.0
-offset_bottom = 1077.0
+offset_right = 1280.0
+offset_bottom = 1280.0
+metadata/_edit_lock_ = true
 
 [node name="Wall_1" type="StaticBody2D" parent="." unique_id=1893145649]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall_1" unique_id=66393008]
-position = Vector2(321, 315.5)
+position = Vector2(625, 555.5)
 shape = SubResource("RectangleShape2D_a01y6")
 
 [node name="ColorRect" type="ColorRect" parent="Wall_1" unique_id=1232369237]
-offset_left = 127.0
-offset_top = 258.0
-offset_right = 512.0
-offset_bottom = 371.0
+offset_left = 431.0
+offset_top = 498.0
+offset_right = 816.0
+offset_bottom = 611.0
 color = Color(1, 0, 1, 1)
 
 [node name="PlayerSpawn" type="Marker2D" parent="." unique_id=901461776]
-position = Vector2(355, 92)
+position = Vector2(460, 271)
 
 [node name="Enemy" parent="." unique_id=1545952919 instance=ExtResource("2_gsbbr")]
-position = Vector2(582, 503)
 
-[node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=237688230]
-tile_set = SubResource("TileSet_h7kxv")
+position = Vector2(918, 837)
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1889695934]
-offset_left = 67.0
-offset_top = 53.0
-offset_right = 1223.0
-offset_bottom = 1013.0
-texture = ExtResource("3_qtqmo")
-stretch_mode = 1
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1898492407]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=766704860]
+position = Vector2(640, -10)
+shape = SubResource("RectangleShape2D_gsbbr")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=1019452539]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3" unique_id=1959542886]
+position = Vector2(640, 1290)
+shape = SubResource("RectangleShape2D_gsbbr")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=997926346]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=680040408]
+position = Vector2(-10, 640)
+shape = SubResource("RectangleShape2D_qtqmo")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="." unique_id=1339513900]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4" unique_id=1525895633]
+position = Vector2(1290, 640)
+shape = SubResource("RectangleShape2D_qtqmo")

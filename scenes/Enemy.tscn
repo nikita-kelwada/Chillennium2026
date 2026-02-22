@@ -26,12 +26,11 @@ animations = [{
 script = ExtResource("1_md0e3")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=660018930 groups=["Enemy"]]
-position = Vector2(126.25, 140.75)
-scale = Vector2(0.15437502, 0.15312499)
+scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_4ra3w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1083466583]
-position = Vector2(128, 129)
+scale = Vector2(0.1, 0.1)
 shape = SubResource("RectangleShape2D_xqn3c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1335344913]
