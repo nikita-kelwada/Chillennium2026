@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://ci3dqs1hk4oko"]
+
+[node name="Attack" type="Node2D" unique_id=813312170]
+
+[node name="Button" type="Button" parent="." unique_id=1631939416]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Attack!"

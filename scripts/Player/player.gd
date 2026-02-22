@@ -1,7 +1,16 @@
 extends CharacterBody2D
 
 @export var speed: float = 400.0
+@export var max_health: int = 100
+var current_health: int
 
-func _physics_process(_delta: float) -> void:
-	if Input.is_action_pressed("left") or Input.is_action_pressed("right") or Input.is_action_pressed("up") or Input.is_action_pressed("down"):
-		print("INPUT DETECTED")
+func _ready():
+	current_health = max_health
+
+func take_damage(amount: int):
+	current_health -= amount
+	current_health = clamp(current_health, 0, max_health)
+
+	if current_health <= 0:
+		#do dying
+		pass

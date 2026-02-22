@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cx0cpptbrx5ri"]
+
+[ext_resource type="Script" uid="uid://cdwpdsu4nlxob" path="res://scripts/battle/battle_scene.gd" id="1_vd1me"]
+[ext_resource type="PackedScene" uid="uid://ch2bc1fn4aryw" path="res://scenes/Enemy.tscn" id="2_t3o3d"]
+[ext_resource type="PackedScene" uid="uid://16imlkh223hq" path="res://scenes/Player.tscn" id="3_rjp4h"]
+
+[node name="BattleScene" type="Node2D" unique_id=1631415887]
+script = ExtResource("1_vd1me")
+
+[node name="Floor" type="ColorRect" parent="." unique_id=1157942129]
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 1916.0
+offset_bottom = 1286.0
+color = Color(0.21273804, 0.46230906, 0.34196073, 1)
+
+[node name="Enemy" parent="." unique_id=1545952919 instance=ExtResource("2_t3o3d")]
+position = Vector2(1252.9999, 304)
+scale = Vector2(3.105, 3.105)
+
+[node name="Player" parent="." unique_id=609665559 instance=ExtResource("3_rjp4h")]
+position = Vector2(487, 874.99994)
+scale = Vector2(4.365, 4.365)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1356423377]
+position = Vector2(955, 653)
+zoom = Vector2(0.66, 0.66)
+
+[node name="AttackButton" type="Button" parent="." unique_id=774223634]
+offset_left = 1134.0
+offset_top = 937.0
+offset_right = 1520.0
+offset_bottom = 1098.0
+theme_override_font_sizes/font_size = 112
+text = "Attack!"
+
+[connection signal="pressed" from="AttackButton" to="." method="_on_attack_button_pressed"]
