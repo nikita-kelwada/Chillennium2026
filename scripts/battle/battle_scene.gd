@@ -3,9 +3,11 @@ extends Node2D
 var user_turn = true;
 @onready var enemy = $Enemy
 @onready var player = $Player/CharacterBody2D
+@onready var _animated_sprite = $Player/CharacterBody2D/AnimatedSprite2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	_animated_sprite.play("idle_battle")
 	pass # Replace with function body.
 
 
@@ -24,4 +26,3 @@ func _on_attack_button_pressed():
 	player.take_damage(10)
 
 	user_turn = false
-
