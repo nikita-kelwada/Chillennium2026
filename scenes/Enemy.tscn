@@ -2,9 +2,25 @@
 
 [ext_resource type="Script" uid="uid://flpg6dryu1f2" path="res://scripts/Enemy/enemy.gd" id="1_md0e3"]
 [ext_resource type="Texture2D" uid="uid://d0v4bxg3xkhic" path="res://assets/Eye.svg" id="2_4ra3w"]
+[ext_resource type="Texture2D" uid="uid://8lu81ootg3vj" path="res://assets/boss1_main.png" id="3_ft8do"]
+[ext_resource type="Texture2D" uid="uid://cpll1u52ofxtt" path="res://assets/boss1_walk.png" id="4_5wwv6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xqn3c"]
 size = Vector2(342.5, 316.25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1vja8"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("3_ft8do")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5wwv6")
+}],
+"loop": true,
+"name": &"Boss1",
+"speed": 5.0
+}]
 
 [node name="Enemy" type="CharacterBody2D" unique_id=1545952919 groups=["Enemy"]]
 script = ExtResource("1_md0e3")
@@ -17,3 +33,7 @@ texture = ExtResource("2_4ra3w")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1083466583]
 position = Vector2(128, 129)
 shape = SubResource("RectangleShape2D_xqn3c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1335344913]
+sprite_frames = SubResource("SpriteFrames_1vja8")
+animation = &"Boss1"
