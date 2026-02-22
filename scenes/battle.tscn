@@ -21,9 +21,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_p1qf1"]
-size = Vector2(858, 871)
-
 [node name="Battle" type="Node2D" unique_id=535777969]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1377798567]
@@ -31,8 +28,4 @@ position = Vector2(514.99994, 784.99994)
 scale = Vector2(0.94198114, 0.9334906)
 sprite_frames = SubResource("SpriteFrames_6vh42")
 animation = &"idle_main_battle"
-frame_progress = 0.9090359
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1285973805]
-position = Vector2(434, 848.5)
-shape = SubResource("RectangleShape2D_p1qf1")
+frame_progress = 0.99681664
