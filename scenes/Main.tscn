@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://uv1depb1efxw"]
 
 [node name="Main" type="Node2D" unique_id=14201980]
+
+[node name="Label" type="Label" parent="." unique_id=205805052]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "aghhh"
