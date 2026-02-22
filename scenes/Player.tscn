@@ -11,9 +11,6 @@
 [ext_resource type="Texture2D" uid="uid://eo0ci5lc842b" path="res://assets/main_mc/front_walking_2.png" id="7_d3wef"]
 [ext_resource type="Texture2D" uid="uid://d4hbkwc6t00a7" path="res://assets/battle_mc/idle_main3.png" id="7_o4126"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ky53y"]
-size = Vector2(123, 152)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_v6fml"]
 animations = [{
 "frames": [{
@@ -65,12 +62,9 @@ animations = [{
 motion_mode = 1
 script = ExtResource("1_h00vy")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2000743283]
-position = Vector2(0.5, -1)
-shape = SubResource("RectangleShape2D_ky53y")
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1070114861]
-position = Vector2(0, -1)
-scale = Vector2(2.125, 2.203125)
+position = Vector2(581, 785)
+scale = Vector2(0.9335494, 0.9329378)
 sprite_frames = SubResource("SpriteFrames_v6fml")
 animation = &"battle"
+frame_progress = 0.47975007

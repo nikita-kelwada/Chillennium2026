@@ -1,26 +1,24 @@
 extends Node2D
 
-var user_turn = true;
+var user_turn := true
+
 @onready var enemy = $Enemy
-@onready var player = $Player/CharacterBody2D
+@onready var player_body: CharacterBody2D = $Player/CharacterBody2D
+@onready var player_sprite: AnimatedSprite2D = $Player/CharacterBody2D/AnimatedSprite2D
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	# Stop overworld script from changing animations
+	player_body.in_battle = true
 
+	# Force the battle animation + force loop
+	player_sprite.sprite_frames.set_animation_loop("battle", true)
+	player_sprite.play("battle")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
-func _on_attack_button_pressed():
-	#if !user_turn:
-		#return 
-
+func _on_attack_button_pressed() -> void:
 	print(enemy.current_health)
 	enemy.take_damage(10)
-	
-	#AI attack
-	player.take_damage(10)
+
+	# AI attack
+	player_body.take_damage(10)
 
 	user_turn = false
