@@ -1,7 +1,14 @@
 [gd_scene format=3 uid="uid://uv1depb1efxw"]
 
+[ext_resource type="PackedScene" uid="uid://cf8i8najf1f50" path="res://scenes/levels/Level01.tscn" id="1_rvslj"]
+[ext_resource type="PackedScene" uid="uid://16imlkh223hq" path="res://scenes/Player.tscn" id="2_0bbpv"]
+
 [node name="Main" type="Node2D" unique_id=14201980]
 
 [node name="Label" type="Label" parent="." unique_id=205805052]
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="Level01" parent="." unique_id=1583420218 instance=ExtResource("1_rvslj")]
+
+[node name="Player" parent="." unique_id=609665559 instance=ExtResource("2_0bbpv")]
